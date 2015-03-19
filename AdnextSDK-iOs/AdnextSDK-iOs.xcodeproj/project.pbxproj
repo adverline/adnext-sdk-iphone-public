@@ -1,0 +1,672 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4C051B7C1917866600F36DF7 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C051B7B1917866600F36DF7 /* HomeViewController.m */; };
+		4C1726A8190E899A00FB9231 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C1726A7190E899A00FB9231 /* Foundation.framework */; };
+		4C1726AA190E899A00FB9231 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C1726A9190E899A00FB9231 /* CoreGraphics.framework */; };
+		4C1726AC190E899A00FB9231 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C1726AB190E899A00FB9231 /* UIKit.framework */; };
+		4C1726B2190E899A00FB9231 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4C1726B0190E899A00FB9231 /* InfoPlist.strings */; };
+		4C1726B4190E899A00FB9231 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C1726B3190E899A00FB9231 /* main.m */; };
+		4C1726B8190E899A00FB9231 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C1726B7190E899A00FB9231 /* AppDelegate.m */; };
+		4C1726BB190E899A00FB9231 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C1726B9190E899A00FB9231 /* Main_iPhone.storyboard */; };
+		4C1726BE190E899A00FB9231 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C1726BC190E899A00FB9231 /* Main_iPad.storyboard */; };
+		4C1726C1190E899A00FB9231 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C1726C0190E899A00FB9231 /* ViewController.m */; };
+		4C1726C3190E899A00FB9231 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C1726C2190E899A00FB9231 /* Images.xcassets */; };
+		4C1726CA190E899A00FB9231 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C1726C9190E899A00FB9231 /* XCTest.framework */; };
+		4C1726CB190E899A00FB9231 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C1726A7190E899A00FB9231 /* Foundation.framework */; };
+		4C1726CC190E899A00FB9231 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C1726AB190E899A00FB9231 /* UIKit.framework */; };
+		4C1726D4190E899A00FB9231 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4C1726D2190E899A00FB9231 /* InfoPlist.strings */; };
+		4C1726D6190E899A00FB9231 /* AdnextSDK_iOsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C1726D5190E899A00FB9231 /* AdnextSDK_iOsTests.m */; };
+		4C1726E5190E8E4500FB9231 /* AdvAdView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C1726E4190E8E4500FB9231 /* AdvAdView.m */; };
+		4C1726E8190E8FDF00FB9231 /* AdvAdRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C1726E7190E8FDF00FB9231 /* AdvAdRequest.m */; };
+		4C1825DD190FAE6C00E9B09E /* AdvRedirectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C1825DC190FAE6C00E9B09E /* AdvRedirectViewController.m */; };
+		4C1825E1190FB21600E9B09E /* AdvCloseButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C1825DF190FB21600E9B09E /* AdvCloseButton.png */; };
+		4C1825E2190FB21600E9B09E /* AdvCloseButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C1825E0190FB21600E9B09E /* AdvCloseButton@2x.png */; };
+		4CF1AC9B193877A9000A9DFB /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CF1AC9A193877A9000A9DFB /* MediaPlayer.framework */; };
+		4CF1AC9E19388BD5000A9DFB /* AdvReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF1AC9D19388BD5000A9DFB /* AdvReachability.m */; };
+		4CF1ACA019388BEA000A9DFB /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CF1AC9F19388BEA000A9DFB /* SystemConfiguration.framework */; };
+		4CF3AFD8193C734A007B99AC /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CF3AFD7193C734A007B99AC /* iAd.framework */; };
+		4CF3AFDA193C734E007B99AC /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CF3AFD9193C734E007B99AC /* AdSupport.framework */; };
+		4CF3AFE4193C768C007B99AC /* libmbAdSdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CF3AFE2193C768C007B99AC /* libmbAdSdk.a */; };
+		4CF3AFEA193C85EF007B99AC /* AdvMisterBellProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF3AFE9193C85EF007B99AC /* AdvMisterBellProvider.m */; };
+		4CF3AFF9193C877A007B99AC /* libGoogleAdMobAds.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CF3AFF8193C877A007B99AC /* libGoogleAdMobAds.a */; };
+		4CF3AFFB193C87BB007B99AC /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CF3AFFA193C87BB007B99AC /* AudioToolbox.framework */; };
+		4CF3AFFD193C87C0007B99AC /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CF3AFFC193C87C0007B99AC /* AVFoundation.framework */; };
+		4CF3AFFF193C87CE007B99AC /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CF3AFFE193C87CE007B99AC /* MessageUI.framework */; };
+		4CF3B001193C87D3007B99AC /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CF3B000193C87D3007B99AC /* StoreKit.framework */; };
+		4CF3B003193C87FC007B99AC /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CF3B002193C87FC007B99AC /* EventKit.framework */; };
+		4CF3B005193C8812007B99AC /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CF3B004193C8812007B99AC /* CoreTelephony.framework */; };
+		4CF3B007193C882A007B99AC /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CF3B006193C882A007B99AC /* AssetsLibrary.framework */; };
+		4CF3B00A193CA772007B99AC /* AdvAdMobProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF3B009193CA772007B99AC /* AdvAdMobProvider.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4C1726CD190E899A00FB9231 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C17269C190E899A00FB9231 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4C1726A3190E899A00FB9231;
+			remoteInfo = "AdnextSDK-iOs";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4C051B7A1917866600F36DF7 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		4C051B7B1917866600F36DF7 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		4C1726A4190E899A00FB9231 /* AdnextSDK-iOs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AdnextSDK-iOs.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C1726A7190E899A00FB9231 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4C1726A9190E899A00FB9231 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		4C1726AB190E899A00FB9231 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		4C1726AF190E899A00FB9231 /* AdnextSDK-iOs-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AdnextSDK-iOs-Info.plist"; sourceTree = "<group>"; };
+		4C1726B1190E899A00FB9231 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4C1726B3190E899A00FB9231 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4C1726B5190E899A00FB9231 /* AdnextSDK-iOs-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AdnextSDK-iOs-Prefix.pch"; sourceTree = "<group>"; };
+		4C1726B6190E899A00FB9231 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4C1726B7190E899A00FB9231 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4C1726BA190E899A00FB9231 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		4C1726BD190E899A00FB9231 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		4C1726BF190E899A00FB9231 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		4C1726C0190E899A00FB9231 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		4C1726C2190E899A00FB9231 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		4C1726C8190E899A00FB9231 /* AdnextSDK-iOsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AdnextSDK-iOsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C1726C9190E899A00FB9231 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		4C1726D1190E899A00FB9231 /* AdnextSDK-iOsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AdnextSDK-iOsTests-Info.plist"; sourceTree = "<group>"; };
+		4C1726D3190E899A00FB9231 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4C1726D5190E899A00FB9231 /* AdnextSDK_iOsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdnextSDK_iOsTests.m; sourceTree = "<group>"; };
+		4C1726E3190E8E4500FB9231 /* AdvAdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AdvAdView.h; path = "AdnextSDK-iOs/AdvAdView.h"; sourceTree = "<group>"; };
+		4C1726E4190E8E4500FB9231 /* AdvAdView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AdvAdView.m; path = "AdnextSDK-iOs/AdvAdView.m"; sourceTree = "<group>"; };
+		4C1726E6190E8FDF00FB9231 /* AdvAdRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AdvAdRequest.h; path = "AdnextSDK-iOs/AdvAdRequest.h"; sourceTree = "<group>"; };
+		4C1726E7190E8FDF00FB9231 /* AdvAdRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AdvAdRequest.m; path = "AdnextSDK-iOs/AdvAdRequest.m"; sourceTree = "<group>"; };
+		4C1825DB190FAE6C00E9B09E /* AdvRedirectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AdvRedirectViewController.h; path = "AdnextSDK-iOs/AdvRedirectViewController.h"; sourceTree = "<group>"; };
+		4C1825DC190FAE6C00E9B09E /* AdvRedirectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AdvRedirectViewController.m; path = "AdnextSDK-iOs/AdvRedirectViewController.m"; sourceTree = "<group>"; };
+		4C1825DF190FB21600E9B09E /* AdvCloseButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = AdvCloseButton.png; path = "AdnextSDK-iOs/Resources/AdvCloseButton.png"; sourceTree = "<group>"; };
+		4C1825E0190FB21600E9B09E /* AdvCloseButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "AdvCloseButton@2x.png"; path = "AdnextSDK-iOs/Resources/AdvCloseButton@2x.png"; sourceTree = "<group>"; };
+		4CF1AC9A193877A9000A9DFB /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		4CF1AC9C19388BD5000A9DFB /* AdvReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AdvReachability.h; path = "AdnextSDK-iOs/AdvReachability.h"; sourceTree = "<group>"; };
+		4CF1AC9D19388BD5000A9DFB /* AdvReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AdvReachability.m; path = "AdnextSDK-iOs/AdvReachability.m"; sourceTree = "<group>"; };
+		4CF1AC9F19388BEA000A9DFB /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		4CF3AFD7193C734A007B99AC /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		4CF3AFD9193C734E007B99AC /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		4CF3AFE2193C768C007B99AC /* libmbAdSdk.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmbAdSdk.a; sourceTree = "<group>"; };
+		4CF3AFE3193C768C007B99AC /* mbAdProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mbAdProvider.h; sourceTree = "<group>"; };
+		4CF3AFE5193C7AFE007B99AC /* AdvSDKProviderProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdvSDKProviderProtocol.h; sourceTree = "<group>"; };
+		4CF3AFE8193C85EF007B99AC /* AdvMisterBellProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdvMisterBellProvider.h; sourceTree = "<group>"; };
+		4CF3AFE9193C85EF007B99AC /* AdvMisterBellProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdvMisterBellProvider.m; sourceTree = "<group>"; };
+		4CF3AFEC193C877A007B99AC /* GADAdMobExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADAdMobExtras.h; sourceTree = "<group>"; };
+		4CF3AFED193C877A007B99AC /* GADAdNetworkExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADAdNetworkExtras.h; sourceTree = "<group>"; };
+		4CF3AFEE193C877A007B99AC /* GADAdSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADAdSize.h; sourceTree = "<group>"; };
+		4CF3AFEF193C877A007B99AC /* GADBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADBannerView.h; sourceTree = "<group>"; };
+		4CF3AFF0193C877A007B99AC /* GADBannerViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADBannerViewDelegate.h; sourceTree = "<group>"; };
+		4CF3AFF1193C877A007B99AC /* GADInAppPurchase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADInAppPurchase.h; sourceTree = "<group>"; };
+		4CF3AFF2193C877A007B99AC /* GADInAppPurchaseDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADInAppPurchaseDelegate.h; sourceTree = "<group>"; };
+		4CF3AFF3193C877A007B99AC /* GADInterstitial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADInterstitial.h; sourceTree = "<group>"; };
+		4CF3AFF4193C877A007B99AC /* GADInterstitialDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADInterstitialDelegate.h; sourceTree = "<group>"; };
+		4CF3AFF5193C877A007B99AC /* GADModules.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADModules.h; sourceTree = "<group>"; };
+		4CF3AFF6193C877A007B99AC /* GADRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADRequest.h; sourceTree = "<group>"; };
+		4CF3AFF7193C877A007B99AC /* GADRequestError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADRequestError.h; sourceTree = "<group>"; };
+		4CF3AFF8193C877A007B99AC /* libGoogleAdMobAds.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAdMobAds.a; sourceTree = "<group>"; };
+		4CF3AFFA193C87BB007B99AC /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		4CF3AFFC193C87C0007B99AC /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		4CF3AFFE193C87CE007B99AC /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		4CF3B000193C87D3007B99AC /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		4CF3B002193C87FC007B99AC /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		4CF3B004193C8812007B99AC /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		4CF3B006193C882A007B99AC /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		4CF3B008193CA772007B99AC /* AdvAdMobProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdvAdMobProvider.h; sourceTree = "<group>"; };
+		4CF3B009193CA772007B99AC /* AdvAdMobProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdvAdMobProvider.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4C1726A1190E899A00FB9231 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CF3B007193C882A007B99AC /* AssetsLibrary.framework in Frameworks */,
+				4CF3B005193C8812007B99AC /* CoreTelephony.framework in Frameworks */,
+				4CF3B003193C87FC007B99AC /* EventKit.framework in Frameworks */,
+				4CF3B001193C87D3007B99AC /* StoreKit.framework in Frameworks */,
+				4CF3AFFF193C87CE007B99AC /* MessageUI.framework in Frameworks */,
+				4C1726AA190E899A00FB9231 /* CoreGraphics.framework in Frameworks */,
+				4CF3AFFD193C87C0007B99AC /* AVFoundation.framework in Frameworks */,
+				4CF3AFFB193C87BB007B99AC /* AudioToolbox.framework in Frameworks */,
+				4CF3AFE4193C768C007B99AC /* libmbAdSdk.a in Frameworks */,
+				4CF3AFDA193C734E007B99AC /* AdSupport.framework in Frameworks */,
+				4CF3AFF9193C877A007B99AC /* libGoogleAdMobAds.a in Frameworks */,
+				4CF3AFD8193C734A007B99AC /* iAd.framework in Frameworks */,
+				4CF1ACA019388BEA000A9DFB /* SystemConfiguration.framework in Frameworks */,
+				4CF1AC9B193877A9000A9DFB /* MediaPlayer.framework in Frameworks */,
+				4C1726AC190E899A00FB9231 /* UIKit.framework in Frameworks */,
+				4C1726A8190E899A00FB9231 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C1726C5190E899A00FB9231 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C1726CA190E899A00FB9231 /* XCTest.framework in Frameworks */,
+				4C1726CC190E899A00FB9231 /* UIKit.framework in Frameworks */,
+				4C1726CB190E899A00FB9231 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4C17269B190E899A00FB9231 = {
+			isa = PBXGroup;
+			children = (
+				4C1726AD190E899A00FB9231 /* AdnextSDK-iOs */,
+				4C1726CF190E899A00FB9231 /* AdnextSDK-iOsTests */,
+				4C1726A6190E899A00FB9231 /* Frameworks */,
+				4C1726A5190E899A00FB9231 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4C1726A5190E899A00FB9231 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4C1726A4190E899A00FB9231 /* AdnextSDK-iOs.app */,
+				4C1726C8190E899A00FB9231 /* AdnextSDK-iOsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4C1726A6190E899A00FB9231 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4CF3B006193C882A007B99AC /* AssetsLibrary.framework */,
+				4CF3B004193C8812007B99AC /* CoreTelephony.framework */,
+				4CF3B002193C87FC007B99AC /* EventKit.framework */,
+				4CF3B000193C87D3007B99AC /* StoreKit.framework */,
+				4CF3AFFE193C87CE007B99AC /* MessageUI.framework */,
+				4CF3AFFC193C87C0007B99AC /* AVFoundation.framework */,
+				4CF3AFFA193C87BB007B99AC /* AudioToolbox.framework */,
+				4CF3AFD9193C734E007B99AC /* AdSupport.framework */,
+				4CF3AFD7193C734A007B99AC /* iAd.framework */,
+				4CF1AC9F19388BEA000A9DFB /* SystemConfiguration.framework */,
+				4CF1AC9A193877A9000A9DFB /* MediaPlayer.framework */,
+				4C1726A7190E899A00FB9231 /* Foundation.framework */,
+				4C1726A9190E899A00FB9231 /* CoreGraphics.framework */,
+				4C1726AB190E899A00FB9231 /* UIKit.framework */,
+				4C1726C9190E899A00FB9231 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4C1726AD190E899A00FB9231 /* AdnextSDK-iOs */ = {
+			isa = PBXGroup;
+			children = (
+				4C1726DF190E89AF00FB9231 /* AdnextSDK-iOs */,
+				4C1726B6190E899A00FB9231 /* AppDelegate.h */,
+				4C1726B7190E899A00FB9231 /* AppDelegate.m */,
+				4C1726B9190E899A00FB9231 /* Main_iPhone.storyboard */,
+				4C1726BC190E899A00FB9231 /* Main_iPad.storyboard */,
+				4C1726BF190E899A00FB9231 /* ViewController.h */,
+				4C1726C0190E899A00FB9231 /* ViewController.m */,
+				4C051B7A1917866600F36DF7 /* HomeViewController.h */,
+				4C051B7B1917866600F36DF7 /* HomeViewController.m */,
+				4C1726C2190E899A00FB9231 /* Images.xcassets */,
+				4C1726AE190E899A00FB9231 /* Supporting Files */,
+			);
+			path = "AdnextSDK-iOs";
+			sourceTree = "<group>";
+		};
+		4C1726AE190E899A00FB9231 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4C1726AF190E899A00FB9231 /* AdnextSDK-iOs-Info.plist */,
+				4C1726B0190E899A00FB9231 /* InfoPlist.strings */,
+				4C1726B3190E899A00FB9231 /* main.m */,
+				4C1726B5190E899A00FB9231 /* AdnextSDK-iOs-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4C1726CF190E899A00FB9231 /* AdnextSDK-iOsTests */ = {
+			isa = PBXGroup;
+			children = (
+				4C1726D5190E899A00FB9231 /* AdnextSDK_iOsTests.m */,
+				4C1726D0190E899A00FB9231 /* Supporting Files */,
+			);
+			path = "AdnextSDK-iOsTests";
+			sourceTree = "<group>";
+		};
+		4C1726D0190E899A00FB9231 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4C1726D1190E899A00FB9231 /* AdnextSDK-iOsTests-Info.plist */,
+				4C1726D2190E899A00FB9231 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4C1726DF190E89AF00FB9231 /* AdnextSDK-iOs */ = {
+			isa = PBXGroup;
+			children = (
+				4CF3AFE0193C768C007B99AC /* SDK */,
+				4C1825DE190FB1AE00E9B09E /* Resources */,
+				4C1726E3190E8E4500FB9231 /* AdvAdView.h */,
+				4C1726E4190E8E4500FB9231 /* AdvAdView.m */,
+				4C1726E6190E8FDF00FB9231 /* AdvAdRequest.h */,
+				4C1726E7190E8FDF00FB9231 /* AdvAdRequest.m */,
+				4CF1AC9C19388BD5000A9DFB /* AdvReachability.h */,
+				4CF1AC9D19388BD5000A9DFB /* AdvReachability.m */,
+				4C1825DB190FAE6C00E9B09E /* AdvRedirectViewController.h */,
+				4C1825DC190FAE6C00E9B09E /* AdvRedirectViewController.m */,
+			);
+			name = "AdnextSDK-iOs";
+			sourceTree = "<group>";
+		};
+		4C1825DE190FB1AE00E9B09E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4C1825DF190FB21600E9B09E /* AdvCloseButton.png */,
+				4C1825E0190FB21600E9B09E /* AdvCloseButton@2x.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		4CF3AFE0193C768C007B99AC /* SDK */ = {
+			isa = PBXGroup;
+			children = (
+				4CF3AFEB193C877A007B99AC /* AdMob */,
+				4CF3AFE1193C768C007B99AC /* mbAdSDK */,
+				4CF3AFE5193C7AFE007B99AC /* AdvSDKProviderProtocol.h */,
+				4CF3AFE8193C85EF007B99AC /* AdvMisterBellProvider.h */,
+				4CF3AFE9193C85EF007B99AC /* AdvMisterBellProvider.m */,
+				4CF3B008193CA772007B99AC /* AdvAdMobProvider.h */,
+				4CF3B009193CA772007B99AC /* AdvAdMobProvider.m */,
+			);
+			name = SDK;
+			path = "AdnextSDK-iOs/SDK";
+			sourceTree = "<group>";
+		};
+		4CF3AFE1193C768C007B99AC /* mbAdSDK */ = {
+			isa = PBXGroup;
+			children = (
+				4CF3AFE2193C768C007B99AC /* libmbAdSdk.a */,
+				4CF3AFE3193C768C007B99AC /* mbAdProvider.h */,
+			);
+			path = mbAdSDK;
+			sourceTree = "<group>";
+		};
+		4CF3AFEB193C877A007B99AC /* AdMob */ = {
+			isa = PBXGroup;
+			children = (
+				4CF3AFEC193C877A007B99AC /* GADAdMobExtras.h */,
+				4CF3AFED193C877A007B99AC /* GADAdNetworkExtras.h */,
+				4CF3AFEE193C877A007B99AC /* GADAdSize.h */,
+				4CF3AFEF193C877A007B99AC /* GADBannerView.h */,
+				4CF3AFF0193C877A007B99AC /* GADBannerViewDelegate.h */,
+				4CF3AFF1193C877A007B99AC /* GADInAppPurchase.h */,
+				4CF3AFF2193C877A007B99AC /* GADInAppPurchaseDelegate.h */,
+				4CF3AFF3193C877A007B99AC /* GADInterstitial.h */,
+				4CF3AFF4193C877A007B99AC /* GADInterstitialDelegate.h */,
+				4CF3AFF5193C877A007B99AC /* GADModules.h */,
+				4CF3AFF6193C877A007B99AC /* GADRequest.h */,
+				4CF3AFF7193C877A007B99AC /* GADRequestError.h */,
+				4CF3AFF8193C877A007B99AC /* libGoogleAdMobAds.a */,
+			);
+			path = AdMob;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4C1726A3190E899A00FB9231 /* AdnextSDK-iOs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C1726D9190E899A00FB9231 /* Build configuration list for PBXNativeTarget "AdnextSDK-iOs" */;
+			buildPhases = (
+				4C1726A0190E899A00FB9231 /* Sources */,
+				4C1726A1190E899A00FB9231 /* Frameworks */,
+				4C1726A2190E899A00FB9231 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AdnextSDK-iOs";
+			productName = "AdnextSDK-iOs";
+			productReference = 4C1726A4190E899A00FB9231 /* AdnextSDK-iOs.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4C1726C7190E899A00FB9231 /* AdnextSDK-iOsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C1726DC190E899A00FB9231 /* Build configuration list for PBXNativeTarget "AdnextSDK-iOsTests" */;
+			buildPhases = (
+				4C1726C4190E899A00FB9231 /* Sources */,
+				4C1726C5190E899A00FB9231 /* Frameworks */,
+				4C1726C6190E899A00FB9231 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4C1726CE190E899A00FB9231 /* PBXTargetDependency */,
+			);
+			name = "AdnextSDK-iOsTests";
+			productName = "AdnextSDK-iOsTests";
+			productReference = 4C1726C8190E899A00FB9231 /* AdnextSDK-iOsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4C17269C190E899A00FB9231 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Adverline;
+				TargetAttributes = {
+					4C1726C7190E899A00FB9231 = {
+						TestTargetID = 4C1726A3190E899A00FB9231;
+					};
+				};
+			};
+			buildConfigurationList = 4C17269F190E899A00FB9231 /* Build configuration list for PBXProject "AdnextSDK-iOs" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4C17269B190E899A00FB9231;
+			productRefGroup = 4C1726A5190E899A00FB9231 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4C1726A3190E899A00FB9231 /* AdnextSDK-iOs */,
+				4C1726C7190E899A00FB9231 /* AdnextSDK-iOsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4C1726A2190E899A00FB9231 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C1726BE190E899A00FB9231 /* Main_iPad.storyboard in Resources */,
+				4C1726C3190E899A00FB9231 /* Images.xcassets in Resources */,
+				4C1726BB190E899A00FB9231 /* Main_iPhone.storyboard in Resources */,
+				4C1726B2190E899A00FB9231 /* InfoPlist.strings in Resources */,
+				4C1825E1190FB21600E9B09E /* AdvCloseButton.png in Resources */,
+				4C1825E2190FB21600E9B09E /* AdvCloseButton@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C1726C6190E899A00FB9231 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C1726D4190E899A00FB9231 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4C1726A0190E899A00FB9231 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CF1AC9E19388BD5000A9DFB /* AdvReachability.m in Sources */,
+				4CF3AFEA193C85EF007B99AC /* AdvMisterBellProvider.m in Sources */,
+				4C1726C1190E899A00FB9231 /* ViewController.m in Sources */,
+				4C1726E5190E8E4500FB9231 /* AdvAdView.m in Sources */,
+				4C1726B8190E899A00FB9231 /* AppDelegate.m in Sources */,
+				4C1726B4190E899A00FB9231 /* main.m in Sources */,
+				4CF3B00A193CA772007B99AC /* AdvAdMobProvider.m in Sources */,
+				4C1825DD190FAE6C00E9B09E /* AdvRedirectViewController.m in Sources */,
+				4C051B7C1917866600F36DF7 /* HomeViewController.m in Sources */,
+				4C1726E8190E8FDF00FB9231 /* AdvAdRequest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C1726C4190E899A00FB9231 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C1726D6190E899A00FB9231 /* AdnextSDK_iOsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4C1726CE190E899A00FB9231 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4C1726A3190E899A00FB9231 /* AdnextSDK-iOs */;
+			targetProxy = 4C1726CD190E899A00FB9231 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4C1726B0190E899A00FB9231 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C1726B1190E899A00FB9231 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		4C1726B9190E899A00FB9231 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C1726BA190E899A00FB9231 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		4C1726BC190E899A00FB9231 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C1726BD190E899A00FB9231 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		4C1726D2190E899A00FB9231 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C1726D3190E899A00FB9231 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4C1726D7190E899A00FB9231 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4C1726D8190E899A00FB9231 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4C1726DA190E899A00FB9231 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AdnextSDK-iOs/AdnextSDK-iOs-Prefix.pch";
+				INFOPLIST_FILE = "AdnextSDK-iOs/AdnextSDK-iOs-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AdnextSDK-iOs/AdnextSDK-iOs/SDK/mbAdSDK",
+					"$(PROJECT_DIR)/AdnextSDK-iOs/AdnextSDK-iOs/SDK/AdMob",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		4C1726DB190E899A00FB9231 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AdnextSDK-iOs/AdnextSDK-iOs-Prefix.pch";
+				INFOPLIST_FILE = "AdnextSDK-iOs/AdnextSDK-iOs-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AdnextSDK-iOs/AdnextSDK-iOs/SDK/mbAdSDK",
+					"$(PROJECT_DIR)/AdnextSDK-iOs/AdnextSDK-iOs/SDK/AdMob",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		4C1726DD190E899A00FB9231 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AdnextSDK-iOs.app/AdnextSDK-iOs";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AdnextSDK-iOs/AdnextSDK-iOs-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "AdnextSDK-iOsTests/AdnextSDK-iOsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		4C1726DE190E899A00FB9231 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AdnextSDK-iOs.app/AdnextSDK-iOs";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AdnextSDK-iOs/AdnextSDK-iOs-Prefix.pch";
+				INFOPLIST_FILE = "AdnextSDK-iOsTests/AdnextSDK-iOsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4C17269F190E899A00FB9231 /* Build configuration list for PBXProject "AdnextSDK-iOs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C1726D7190E899A00FB9231 /* Debug */,
+				4C1726D8190E899A00FB9231 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C1726D9190E899A00FB9231 /* Build configuration list for PBXNativeTarget "AdnextSDK-iOs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C1726DA190E899A00FB9231 /* Debug */,
+				4C1726DB190E899A00FB9231 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C1726DC190E899A00FB9231 /* Build configuration list for PBXNativeTarget "AdnextSDK-iOsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C1726DD190E899A00FB9231 /* Debug */,
+				4C1726DE190E899A00FB9231 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4C17269C190E899A00FB9231 /* Project object */;
+}
