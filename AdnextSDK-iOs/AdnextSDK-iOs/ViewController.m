@@ -34,8 +34,8 @@
         adViewBanner_ = [[AdvAdView alloc] init];
         
         // Définissez l'ID du bloc d'annonces.
-        adViewBanner_.appId = @"b0c4fc27d473de883aff3557eb741cde";
-        adViewBanner_.adId = 102784;
+        adViewBanner_.adId = ID_APPLICATION;
+        adViewBanner_.format = AdvAdFormatBanner;
         
         // Spécifiez le contrôleur UIViewController que l'exécution doit restaurer après avoir renvoyé
         // l'utilisateur à l'emplacement de destination de l'annonce et ajoutez-le à la hiérarchie de la vue.
@@ -52,8 +52,8 @@
         adViewInterstitial_ = [[AdvAdView alloc] init];
         
         // Définissez l'ID du bloc d'annonces.
-        adViewInterstitial_.appId = @"b0c4fc27d473de883aff3557eb741cde";
-        adViewInterstitial_.adId = 102787;
+        adViewInterstitial_.adId = ID_APPLICATION;
+        adViewInterstitial_.format = AdvAdFormatInterstitial;
         
         // Spécifiez le contrôleur UIViewController que l'exécution doit restaurer après avoir renvoyé
         // l'utilisateur à l'emplacement de destination de l'annonce et ajoutez-le à la hiérarchie de la vue.

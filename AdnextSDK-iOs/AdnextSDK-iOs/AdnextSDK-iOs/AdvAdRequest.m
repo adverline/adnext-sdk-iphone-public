@@ -11,7 +11,7 @@
 #import <CoreTelephony/CTTelephonyNetworkInfo.h>
 
 //#define SERVEUR_URL (@"http://ads.adverline.com/adMobs.php")
-#define SERVEUR_URL (@"http://adnext.fr/richmedia.adv?&nodv=1")
+#define SERVEUR_URL (@"http://adnext.fr/richmedia.adv?&isMobile=1&doincludes=1&nodv=1")
 
 //http://adnext.fr/richmedia.adv?&nodv=1&id=102784&plc=15&uid=b0c4fc27d473de883aff3557eb741cde&w=1080&h=1776&network=4G
 

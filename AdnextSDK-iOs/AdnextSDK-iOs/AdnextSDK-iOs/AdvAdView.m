@@ -88,7 +88,6 @@
     //        height = tmp;
     //    }
     
-    
     self.request.URL = [NSURL URLWithString:[NSString stringWithFormat:@"%@&w=%.0f&h=%.0f&id=%ld&uid=%@", [self.request.URL absoluteString], width * [[UIScreen mainScreen] scale], height * [[UIScreen mainScreen] scale], (long)self.adId, self.appId]];
     
     NSLog(@"%@", [self.request.URL absoluteString]);
@@ -522,11 +521,12 @@
             [self removeGestureRecognizer:self.tapGesture];
             
             
-            if ([[self.json[@"CUSTOMIZE"][@"FORMAT"] uppercaseString] isEqualToString:@"BANNER"])
+            /*
+             if ([[self.json[@"CUSTOMIZE"][@"FORMAT"] uppercaseString] isEqualToString:@"BANNER"])
                 self.format = AdvAdFormatBanner;
             else
                 self.format = AdvAdFormatInterstitial;
-            
+            */
             //            JSONObject partner_selected = null, tmpPartner = null;
             
             NSDictionary *partnerSelected = nil;
@@ -566,9 +566,9 @@
                 [self.provider setAdView:self];
                 
                 if (self.format == AdvAdFormatBanner)
-                    [self.provider loadAdForView:self.currentView forAdId:partnerSelected[@"PUBLISHER_ID"] andRootController:self.rootViewController];
+                    [self.provider loadAdForView:self.currentView forAdId:partnerSelected[@"PUBLISHER_ID"][@"BANNER"] andRootController:self.rootViewController];
                 else
-                    [self.provider loadInterstitialForView:self.currentView forAdId:partnerSelected[@"PUBLISHER_ID"] andRootController:self.rootViewController];
+                    [self.provider loadInterstitialForView:self.currentView forAdId:partnerSelected[@"PUBLISHER_ID"][@"INTERSTITIAL"] andRootController:self.rootViewController];
             }
             
         }
