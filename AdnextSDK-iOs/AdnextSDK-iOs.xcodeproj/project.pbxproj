@@ -44,6 +44,7 @@
 		4CF3B007193C882A007B99AC /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CF3B006193C882A007B99AC /* AssetsLibrary.framework */; };
 		4CF3B00A193CA772007B99AC /* AdvAdMobProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF3B009193CA772007B99AC /* AdvAdMobProvider.m */; };
 		5F0590651C7EF9B4006B23E9 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F0590641C7EF9B4006B23E9 /* GoogleMobileAds.framework */; };
+		5F0590671C7F0F49006B23E9 /* GoogleMobileAdsSdkiOS-7.6.0 in Resources */ = {isa = PBXBuildFile; fileRef = 5F0590661C7F0F49006B23E9 /* GoogleMobileAdsSdkiOS-7.6.0 */; settings = {ASSET_TAGS = (); }; };
 		5FB89A9A1C7DF1490085C585 /* AdvAdxProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FB89A991C7DF1490085C585 /* AdvAdxProvider.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
@@ -109,6 +110,7 @@
 		4CF3B008193CA772007B99AC /* AdvAdMobProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdvAdMobProvider.h; sourceTree = "<group>"; };
 		4CF3B009193CA772007B99AC /* AdvAdMobProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdvAdMobProvider.m; sourceTree = "<group>"; };
 		5F0590641C7EF9B4006B23E9 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = "AdnextSDK-iOs/AdnextSDK-iOs/SDK/GoogleMobileAdsSdkiOS-7.6.0/GoogleMobileAds.framework"; sourceTree = "<group>"; };
+		5F0590661C7F0F49006B23E9 /* GoogleMobileAdsSdkiOS-7.6.0 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "GoogleMobileAdsSdkiOS-7.6.0"; sourceTree = "<group>"; };
 		5FB89A981C7DF0DA0085C585 /* AdvAdxProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdvAdxProvider.h; sourceTree = "<group>"; };
 		5FB89A991C7DF1490085C585 /* AdvAdxProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdvAdxProvider.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -268,6 +270,7 @@
 		4CF3AFE0193C768C007B99AC /* SDK */ = {
 			isa = PBXGroup;
 			children = (
+				5F0590661C7F0F49006B23E9 /* GoogleMobileAdsSdkiOS-7.6.0 */,
 				4CF3AFE1193C768C007B99AC /* mbAdSDK */,
 				4CF3AFE5193C7AFE007B99AC /* AdvSDKProviderProtocol.h */,
 				4CF3AFE8193C85EF007B99AC /* AdvMisterBellProvider.h */,
@@ -371,6 +374,7 @@
 				4C1726BB190E899A00FB9231 /* Main_iPhone.storyboard in Resources */,
 				4C1726B2190E899A00FB9231 /* InfoPlist.strings in Resources */,
 				4C1825E1190FB21600E9B09E /* AdvCloseButton.png in Resources */,
+				5F0590671C7F0F49006B23E9 /* GoogleMobileAdsSdkiOS-7.6.0 in Resources */,
 				4C1825E2190FB21600E9B09E /* AdvCloseButton@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
