@@ -5,11 +5,10 @@
 //  Created by Xavier De Koninck on 02/06/2014.
 //  Copyright (c) 2014 Adverline. All rights reserved.
 //
-
+@import GoogleMobileAds;
 #import "AdvAdMobProvider.h"
 
-#import "GADBannerView.h"
-#import "GADInterstitial.h"
+
 #import "AdvAdView.h"
 
 @interface AdvAdMobProvider () <GADInterstitialDelegate>
@@ -28,9 +27,7 @@
     self.rootController = rootController;
     
     GADAdSize size = ([[UIDevice currentDevice].model isEqualToString:@"iPad"]) ? (kGADAdSizeFullBanner) : (kGADAdSizeBanner);
-    CGPoint origin = CGPointMake(0.0,
-                                 view.frame.size.height -
-                                 CGSizeFromGADAdSize(size).height);
+    CGPoint origin = CGPointMake(0.0, view.frame.size.height -CGSizeFromGADAdSize(size).height);
     
     // Use predefined GADAdSize constants to define the GADBannerView.
     self.bannerView = [[GADBannerView alloc] initWithAdSize:size origin:origin];
@@ -50,12 +47,10 @@
 - (void)loadInterstitialForView:(UIView *)view forAdId:(NSString*)adId andRootController:(UIViewController*)rootController
 {
     self.rootController = rootController;
-    
-    self.interstitialView = [[GADInterstitial alloc] init];
-    self.interstitialView.adUnitID = adId;
+    self.interstitialView = [[GADInterstitial alloc] initWithAdUnitID:adId];
     self.interstitialView.delegate = self;
-    
     GADRequest *request = [GADRequest request];
+    //request.testDevices = @[ kGADSimulatorID ];
     [self.interstitialView loadRequest:request];
 }
 

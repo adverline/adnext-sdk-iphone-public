@@ -68,6 +68,8 @@ typedef enum
 
 @property (nonatomic, assign) BOOL deactivateMisterBellPartner;
 @property (nonatomic, assign) BOOL deactivateAdMobPartner;
+@property (nonatomic, assign) BOOL deactivateAdxPartner;
+@property (nonatomic, assign) BOOL deactivateFacebookPartner;
 
 
 - (void)loadRequest:(AdvAdRequest*)request forCurrentView:(UIView*)view;

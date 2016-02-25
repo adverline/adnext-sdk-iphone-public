@@ -11,6 +11,7 @@
 #import <MediaPlayer/MediaPlayer.h>
 #import "AdvSDKProviderProtocol.h"
 #import "AdvAdMobProvider.h"
+#import "AdvAdxProvider.h"
 #import "AdvMisterBellProvider.h"
 
 
@@ -549,7 +550,12 @@
             {
                 self.provider = nil;
                 
-                if([publisherName isEqualToString:@"ADMOB"]){
+                if([publisherName isEqualToString:@"ADX"]){
+                    NSLog(@"ADX!!!");
+                    if (!self.deactivateAdxPartner)
+                        self.provider = [[AdvAdxProvider alloc] init];
+                }
+                else if([publisherName isEqualToString:@"ADMOB"]){
                     NSLog(@"ADMOB!!!");
                     
                     if (!self.deactivateAdMobPartner)
