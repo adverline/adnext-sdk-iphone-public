@@ -70,7 +70,7 @@ L'instruction suivante permet d'effectuer la configuration des bannières dans l
     
 		    // Définissez l'ID du bloc d'annonces.
 		    adView_.adId = MY_BANNER_UNIT_ID;
-		    adViex.format = AdvAdFormatBanner;
+		    adView_.format = AdvAdFormatBanner;
     
 		    // Spécifiez le contrôleur UIViewController que l'exécution doit restaurer après avoir renvoyé
 		    // l'utilisateur à l'emplacement de destination de l'annonce et ajoutez-le à la hiérarchie de la vue.
