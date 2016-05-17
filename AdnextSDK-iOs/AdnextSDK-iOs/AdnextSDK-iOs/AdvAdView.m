@@ -11,8 +11,8 @@
 #import <MediaPlayer/MediaPlayer.h>
 #import "AdvSDKProviderProtocol.h"
 #import "AdvAdMobProvider.h"
-#import "AdvAdxProvider.h"
 #import "AdvMisterBellProvider.h"
+#import <AdSupport/ASIdentifierManager.h>
 
 
 #define DEGREES_TO_RADIANS(angle) ((angle) / 180.0 * M_PI)
@@ -63,6 +63,8 @@
     {
         self.data = [NSMutableData data];
         self.userInteractionEnabled = TRUE;
+        self.idfa = self.identifierForAdvertising;
+        NSLog(@"IDFA = %@", self.idfa);
         
         //        self.backgroundColor = [UIColor blueColor];
         
@@ -311,7 +313,7 @@
     [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:self.json[@"CONFIG"][@"CONTENT"]]]];
     //  [webView loadHTMLString:self.json[@"CONFIG"][@"CONTENT"] baseURL:nil];
     
-    webView.scrollView.scrollEnabled = FALSE;
+    //webView.scrollView.scrollEnabled = FALSE;
     
     [self addSubview:webView];
     
@@ -468,9 +470,17 @@
     else
         redirect.url = self.json[@"CONFIG"][@"REDIRECT"];
     
-    [self.rootViewController presentViewController:redirect animated:TRUE completion:^{
+    redirect.url = [self updateMacro:redirect.url];
+    
+    NSLog(@"%@", [NSURL URLWithString:redirect.url]);
+    
+    [self closeAd:nil];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:redirect.url]];
+    
+    /*[self.rootViewController presentViewController:redirect animated:TRUE completion:^{
         
-    }];
+        //[[UIApplication sharedApplication] openURL:[NSURL URLWithString:redirect.url]];
+    }];*/
 }
 
 
@@ -550,12 +560,7 @@
             {
                 self.provider = nil;
                 
-                if([publisherName isEqualToString:@"ADX"]){
-                    NSLog(@"ADX!!!");
-                    if (!self.deactivateAdxPartner)
-                        self.provider = [[AdvAdxProvider alloc] init];
-                }
-                else if([publisherName isEqualToString:@"ADMOB"]){
+                if([publisherName isEqualToString:@"ADMOB"]){
                     NSLog(@"ADMOB!!!");
                     
                     if (!self.deactivateAdMobPartner)
@@ -657,6 +662,7 @@
     
     self.tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(adPressed:)];
     [self.contentView addGestureRecognizer:self.tapGesture];
+    [self.contentView setUserInteractionEnabled:TRUE];
     
     if (self.adAnimationStart == AdvAdAnimSlideUp
         || self.adAnimationStart == AdvAdAnimSlideDown
@@ -846,5 +852,26 @@
     [self removeFromSuperview];
 }
 
+
+- (NSString *)identifierForAdvertising
+{
+    if([[ASIdentifierManager sharedManager] isAdvertisingTrackingEnabled])
+    {
+        NSUUID *IDFA = [[ASIdentifierManager sharedManager] advertisingIdentifier];
+        
+        return [IDFA UUIDString];
+    }
+    
+    return nil;
+}
+
+- (NSString *)updateMacro:(NSString*)str
+{
+    // TO DEBUG
+    //str = [NSString stringWithFormat:@"%@%@", str, @"&idfa=__ADV_ADVERTISING_ID__"];
+    NSString *new = [str stringByReplacingOccurrencesOfString: @"%%ADVERTISING_IDENTIFIER_PLAIN%%" withString:self.idfa];
+    new = [new stringByReplacingOccurrencesOfString: @"__ADV_ADVERTISING_ID__" withString:self.idfa];
+    return new;
+}
 
 @end

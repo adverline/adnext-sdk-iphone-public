@@ -34,7 +34,7 @@
         adViewBanner_ = [[AdvAdView alloc] init];
         
         // Définissez l'ID du bloc d'annonces.
-        adViewBanner_.adId = 0; // remplacez par votre ID_APPLICATION
+        adViewBanner_.adId = ID_APPLICATION; // remplacez par votre ID_APPLICATION
         adViewBanner_.format = AdvAdFormatBanner;
         
         // Spécifiez le contrôleur UIViewController que l'exécution doit restaurer après avoir renvoyé
@@ -52,7 +52,7 @@
         adViewInterstitial_ = [[AdvAdView alloc] init];
         
         // Définissez l'ID du bloc d'annonces.
-        adViewInterstitial_.adId = 0; // remplacez par votre ID_APPLICATION
+        adViewInterstitial_.adId = ID_APPLICATION; // remplacez par votre ID_APPLICATION
         adViewInterstitial_.format = AdvAdFormatInterstitial;
         
         // Spécifiez le contrôleur UIViewController que l'exécution doit restaurer après avoir renvoyé

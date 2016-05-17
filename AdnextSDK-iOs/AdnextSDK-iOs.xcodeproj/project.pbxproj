@@ -44,8 +44,8 @@
 		4CF3B007193C882A007B99AC /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CF3B006193C882A007B99AC /* AssetsLibrary.framework */; };
 		4CF3B00A193CA772007B99AC /* AdvAdMobProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF3B009193CA772007B99AC /* AdvAdMobProvider.m */; };
 		5F0590651C7EF9B4006B23E9 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F0590641C7EF9B4006B23E9 /* GoogleMobileAds.framework */; };
-		5F0590671C7F0F49006B23E9 /* GoogleMobileAdsSdkiOS-7.6.0 in Resources */ = {isa = PBXBuildFile; fileRef = 5F0590661C7F0F49006B23E9 /* GoogleMobileAdsSdkiOS-7.6.0 */; settings = {ASSET_TAGS = (); }; };
-		5FB89A9A1C7DF1490085C585 /* AdvAdxProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FB89A991C7DF1490085C585 /* AdvAdxProvider.m */; settings = {ASSET_TAGS = (); }; };
+		5F0590671C7F0F49006B23E9 /* GoogleMobileAdsSdkiOS-7.6.0 in Resources */ = {isa = PBXBuildFile; fileRef = 5F0590661C7F0F49006B23E9 /* GoogleMobileAdsSdkiOS-7.6.0 */; };
+		5FB89A9A1C7DF1490085C585 /* AdvAdxProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FB89A991C7DF1490085C585 /* AdvAdxProvider.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -543,6 +543,7 @@
 				);
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.6.0",
@@ -577,6 +578,7 @@
 				);
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.6.0",
